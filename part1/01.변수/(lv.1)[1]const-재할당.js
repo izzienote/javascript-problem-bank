@@ -8,6 +8,8 @@
 
 function reassignConst() {
   // TODO
+  const restart = 0;
+  restart = 1;
 }
 
 // export 를 수정하지 마세요.
