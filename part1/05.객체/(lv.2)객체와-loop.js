@@ -10,6 +10,16 @@
  */
 function countProperties(obj) {
   // TODO
+  // [1]
+  // let keys = Object.keys(obj);
+  // return Number(keys.length);
+  // [2]
+  let answer = 0;
+  for (let keys in obj) {
+    answer++;
+  }
+  return answer;
+  // [3] hasOwnProperty() 추가적으로 알아보기
 }
 
 export { countProperties };
