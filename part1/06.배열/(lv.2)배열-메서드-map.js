@@ -8,8 +8,13 @@
  * @returns {number[]} 각 원소를 제곱한 결과로 구성된 새 배열
  */
 
-function squareElements() {
+function squareElements(arr) {
   // TODO
+  // return arr.map(function (item) {
+  //   return Math.pow(item, 2);
+  // })
+  // 화살표 함수가 아니라서 return이 계속 필요
+  return arr.map(item => Math.pow(item, 2)); //한줄로 바꿔봄
 }
 
 // export를 수정하지 마세요.
