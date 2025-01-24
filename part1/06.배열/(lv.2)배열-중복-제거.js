@@ -8,8 +8,16 @@
  * @param {any[]} arr
  * @returns {any[]} 중복이 제거된 새 배열
  */
+
+// const arr = [1, 2, 3, 4, 1, 1, 2];
+// const str = ["ba", "na", "na", "ha"];
+// console.log(new Set(str));
+// console.log([...new Set(str)]);
+
 function getUniqueElements(arr) {
   // TODO: 중복을 제거한 새 배열을 반환하세요.
+  const newArr = [...new Set(arr)];
+  return newArr;
 }
 
 // export를 수정하지 마세요.
