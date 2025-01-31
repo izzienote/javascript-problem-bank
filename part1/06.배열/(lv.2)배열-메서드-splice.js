@@ -16,7 +16,16 @@
  */
 function removeAndInsert(arr, start, deleteCount, ...items) {
   // TODO
+  arr.splice(start, deleteCount, ...items);
+  return arr;
 }
+
+// let arr = [1, 2, 3];
+// const start = 1;
+// const deleteCount = 1;
+// const items = [10, 20];
+// arr.splice(start, deleteCount, ...items);
+// console.log(arr);
 
 // export를 수정하지 마세요.
 export { removeAndInsert };

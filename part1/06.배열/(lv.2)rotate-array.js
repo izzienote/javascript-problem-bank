@@ -9,7 +9,17 @@
  */
 function rotateArray(arr) {
   // TODO: 원본을 변경하지 않고, 마지막 요소를 맨 앞으로 이동한 새 배열을 반환
+  let newArr = [...arr];
+  let popedNumber = newArr.pop();
+  let result = [popedNumber, ...newArr];
+  return result;
 }
+
+// let arr = [1, 2, 3];
+// let newArr = [...arr];
+// let popedNumber = newArr.pop();
+// let result = [popedNumber, ...newArr];
+// console.log(result);
 
 // export를 수정하지 마세요.
 export { rotateArray };
