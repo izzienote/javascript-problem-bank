@@ -5,7 +5,12 @@
  *
  * @returns {Promise<string>}
  */
-function returnHello() {}
+function returnHello() {
+  let newArr = new Promise((resolve) => {
+    resolve("Hello")
+  })
+  return newArr;
+}
 
 // export를 수정하지 마세요.
 export { returnHello };
