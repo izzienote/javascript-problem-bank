@@ -15,8 +15,10 @@
  * @param  {...object[]} objs
  * @returns {object}
  */
-
-function mergeObjects(...objs) {}
+// 새로운 객체 {}에 병합되기 때문에 원본 객체들은 변경되지 않는다고함
+function mergeObjects(...objs) {
+  return Object.assign({}, ...objs);
+}
 
 // export를 수정하지 마세요.
 export { mergeObjects };
